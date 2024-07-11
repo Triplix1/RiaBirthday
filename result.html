@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        * {
+            background: #ffefc2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .photo {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .main {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .my-6 {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mt-8 {
+            margin-top: 2rem;
+        }
+
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+
+        .ml-10 {
+            margin-left: 2.5rem;
+        }
+
+        .mr-10 {
+            margin-right: 2.5rem;
+        }
+
+        .spinning-text {
+            animation: spin 10s linear infinite;
+            padding: 0;
+            border-radius: 300px;
+            margin: 48px 0;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        svg {
+            width: 300px;
+            height: 300px;
+            border-radius: 50px;
+        }
+
+        text {
+            font-size: 18px;
+            fill: #ff4081;
+            font-weight: bold;
+        }
+
+        .gif {
+            width: 70%;
+        }
+
+        .iframe-container {
+            width: 90%;
+            height: 230px;
+            max-width: 1000px;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="w-full flex justify-center">
+            <img class="photo"
+                 src="assets/Photos/jaba.jpg"
+                 alt="HappyBirthayFrog">
+        </div>
+        <div class="w-full flex justify-center">
+            <div class="w-[300px] mt-8 happy-text spinning-text">
+                <svg viewBox="0 0 100 100">
+                    <path id="circlePath"
+                          d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
+                          fill="none" />
+                    <text>
+                        <textPath href="#circlePath">
+                            РІЯ З ДНЕМ НАРОДЖЕННЯ!
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+        </div>
+        <div class="w-full flex justify-center my-6">
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/toAiPgJrtMs?si=R9bDJjYZcgIKyKM5&autoplay=1&mute=1"
+                        title="YouTube video player"
+                        allow="autoplay; encrypted-media"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col items-center align-middle">
+            <img class="gif mr-10"
+                 src="assets/Photos/izbandut-i̇zbandut.gif">
+            <img class="my-6 ml-10 gif"
+                 src="assets/Photos/rick-roll-rick-astley.gif">
+            <img class="mr-10 gif"
+                 src="assets/Photos/rick-roll-rick-rolled.gif">
+        </div>
+
+        <div class="w-full flex justify-center my-6">
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=HqRPj3ENsTQc4ATF&autoplay=1"
+                        title="YouTube video player"
+                        allow="autoplay; encrypted-media"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
